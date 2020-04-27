@@ -1,10 +1,13 @@
 def setup():
     size(400, 400)
     textSize(80)
+    global czyH
+    czyH = False
     
     
 def draw():
     clear()
+    global czyH
     
     fill(255)
     if ((mouseX < 120) and (mouseY < 270) and
@@ -24,12 +27,16 @@ def draw():
     if keyPressed:
         if key == "h":
             fill("#40ff00")
-    if keyPressed:
+            czyH = True
+    if keyPressed: # w ten sposób przełączanie strzałkami działa też, gdy nic nie jest zaznaczone, a to jest nieprawidłowe, dodałąm więc dodatkowe warunki
         if key == CODED:
-            if keyCode == RIGHT:
+            if keyCode == RIGHT and ((mouseX < 120) and (mouseY < 270) and
+       (mouseX > 30) and (mouseY > 180)):
                 fill("#40ff00")
-            if keyCode == LEFT:
+            if keyCode == LEFT and czyH:
                 fill(255)
+    else:
+        czyH = False
     text('H', 300, 200)
     
     s = createShape()
@@ -41,3 +48,5 @@ def draw():
     s.vertex(375, 160)
     s.endShape(CLOSE)
     shape(s, 10, 190)
+    
+# 2pkt, bo ze strzałkami było tricky i uznaję
