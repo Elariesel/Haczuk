@@ -70,3 +70,6 @@ def draw():
         i.drawFigure()
         if i.posX <= 0 or i.posX >= windowX or i.posY <= 0 or i.posY >= windowY:
             figureList.remove(i)
+            
+# trochę daleko poleciałeś, na pewno ogarniasz co tu się dzieje? Dziecdziczenie i enkapsulacja dopiero miały być. Mieliście stworzyć dwa obiekty, a nie kolejme dwa podtypy klasy ;P
+# 2 pkt
