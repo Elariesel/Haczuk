@@ -1,0 +1,11 @@
+Bankomat
+	nazwaBanku
+	listaKont
+	wplac()
+	wyplac()
+	balansKonta()
+
+Klient
+	idKonta
+	glebokoscPortfela
+	sprawdzPortfel()
