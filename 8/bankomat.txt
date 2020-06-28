@@ -1,11 +1,14 @@
 Bankomat
-	nazwaBanku
-	listaKont
+	nazwaBanku # bankomat jest tyklo jednego banku?
+	listaKont # to raczej przechowuje system bankowy, z którym bankomayt może ise łączyć, nie myślisz chyba, że każdy bankomat zawiera listę kont wszystkich banków i klientów + zagranicznych...
 	wplac()
 	wyplac()
-	balansKonta()
+	balansKonta() # to powinno się znaleźć u klienta/karty
+	# brakuje np. informacji jaka kwota i w jakich nominałąch znajduje się w bankomacie
 
-Klient
+Klient # lepsza byłaby w tym miejscu karta - do karty mamy przypisane jedno konto, klient może mieć kilka kont
 	idKonta
 	glebokoscPortfela
 	sprawdzPortfel()
+
+#0,75/1,5pkt za tą część
