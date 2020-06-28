@@ -74,4 +74,6 @@ def draw():
 #Wreszcie odzyskałem laptopa i zabieram się za nadrabianie zaległości.
 #Mój kod do zadania 5 już miał dziedziczenie, więc użyję go jeszcze raz - mniej czasu zajmie Pani sprawdzanie ;)
 #zmieniłem jedynie na szybko kolory, aby nie był to dokładnie ten sam
-#dziękuję za cierpliwość w kwestii mojego braku sprzętu 
+#dziękuję za cierpliwość w kwestii mojego braku sprzętu
+
+#2pkt
