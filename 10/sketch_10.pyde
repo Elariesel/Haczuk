@@ -68,3 +68,7 @@ class Tests(unittest.TestCase):
         self.assertTrue(len(self.library.availableBooks) > 0)
     def test3(self):
         self.assertFalse(self.books[-1] != "Harry Potter")
+
+        
+        
+        # zadania 11 szczerze mówiąc nie zrozumiałem, więc go brakuje :(((
